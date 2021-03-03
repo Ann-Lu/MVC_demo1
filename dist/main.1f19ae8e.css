@@ -1,0 +1,81 @@
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+ol,ul{
+    list-style: none;
+}
+body {overflow: hidden;
+}
+
+body .page {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+section{
+    width: 50vw;
+    height: 50vh;
+    border:1px solid grey
+}
+/* #app2 #down{
+    margin-top: 5vh;
+} */
+#tabBar{
+    display: flex;
+}
+#tabBar>li{  
+    width: 50%;
+    border: 1px solid grey;
+}
+#tabContent>li{
+    display: none;
+}
+#app2 #tabContent >li.active{
+    display: block;
+}
+#app2 #tabBar>li.selected {
+background: rgb(233, 136, 52);
+color:white;
+}
+    
+#app3 .square{
+    border: 2px solid ;
+    width: 10vw;
+    height:10vh;
+    margin-top:10vh;
+    margin-left:5vw;
+    position: relative;
+    transition: transform 1s;
+}
+#app3 .square.active{
+    transform: translateX(15vw);
+}
+/* #app3 .square>span{
+    position: absolute;
+    margin-top: 25%;
+    margin-left: 25%;
+} */
+
+#app4 .circle{
+    border: 1px solid red;
+    width:20vw;
+    height: 20vh;
+    border-radius: 50%;
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+@keyframes change{
+    0%{
+        background:#dc143c;
+    }
+    100%{
+        background:rgb(54, 54, 173);
+    }
+
+}
+#app4 .circle.active{
+    animation:change 1s infinite alternate linear;
+}
+
+/*# sourceMappingURL=/main.1f19ae8e.css.map */

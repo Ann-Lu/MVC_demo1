@@ -1,0 +1,21 @@
+/* #app2 #down{
+    margin-top: 5vh;
+} */
+#tabBar{
+    display: flex;
+}
+#tabBar>li{  
+    width: 50%;
+    border: 1px solid grey;
+}
+#tabContent>li{
+    display: none;
+}
+#app2 #tabContent >li.active{
+    display: block;
+}
+#app2 #tabBar>li.selected {
+background: rgb(233, 136, 52);
+color:white;
+}
+    
